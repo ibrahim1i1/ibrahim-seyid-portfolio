@@ -13,7 +13,7 @@ export default function IntroVideo () {
     }
 
     return (
-        <div className="min-h-screen bg-black text-white relative">
+        <div className="bg-black text-white relative">
             {showIntro && (
                 <div className={`fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-500 ${
                     isFading ? 'opacity-0 pointer-events-none' : 'opacity-100'
