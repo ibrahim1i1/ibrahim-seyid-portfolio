@@ -32,14 +32,14 @@ export default function About() {
                         <span className="text-[12px] text-cyan-400/80 font-mono">01.</span>
                         <span className="text-[12px] text-zinc-400 font-medium font-mono">About Me</span>
                     </div>
-                    <div className="text-center space-y-1.5">
-                        <h1 className="font-extrabold text-3xl text-white sm:text-4xl md:text-5xl">Engineering clean & practical web experiences</h1>
+                    <div className="text-center space-y-1.5 mb-8">
+                        <h1 className="font-extrabold text-3xl text-white sm:text-4xl">Engineering clean & practical web experiences</h1>
                         <p className="text-zinc-400 md:text-lg">Passionate about bridging visual design with performant frontend architecture.</p>
                     </div>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start max-w-7xl mx-auto w-full">
-                    <div className="lg:col-span-6 rounded-2xl border border-zinc-500/60 p-5 text-left space-y-2.5">
+                    <div className="lg:col-span-5 rounded-2xl border border-zinc-500/60 p-5 text-left space-y-2.5">
                         <div className="flex gap-2 items-center">
                             <div className="w-2 h-2 bg-cyan-400 rounded-full" />
                             <span className="font-semibold">Who I am</span>
@@ -64,7 +64,7 @@ export default function About() {
                         </div>
                     </div>
 
-                    <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {highlights.map((index) => (
                             <div key={index.title}
                                 className="flex flex-col justify-between  border p-4 rounded-2xl border-zinc-500/60 w-full"
