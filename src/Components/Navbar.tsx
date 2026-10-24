@@ -17,7 +17,7 @@ export default function Navbar() {
   const languages = ['EN', 'TR'];
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-black px-4 py-2.5 sm:px-8 sm:py-3 backdrop-blur-md ">
+    <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-black/80 px-4 py-2.5 sm:px-8 sm:py-3 backdrop-blur-md ">
       <div className="mx-auto flex max-w-7xl items-center justify-between">
         {/*logo*/}
         <div>
@@ -39,7 +39,7 @@ export default function Navbar() {
                   <li key={link.href}>
 
                     <a href={link.href}
-                      onClick={() => setActiveLang(link.href)}
+                      onClick={() => setActiveLink(link.href)}
                       className={`py-1 transition-colors ${isActive
                         ? 'text-white font-semibold'
                         : 'text-zinc-400 hover:text-zinc-100'

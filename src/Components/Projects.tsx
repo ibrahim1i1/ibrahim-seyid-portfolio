@@ -1,7 +1,7 @@
 import { projects } from "../data/projects";
 export default function Projects() {
   return (
-    <section id="projects" className="min-h-screen p-4 max-w-6xl mx-auto">
+    <section id="projects" className="min-h-screen p-4 max-w-6xl mx-auto flex items-center justify-center">
       <div className="flex flex-col items-center gap-6">
 
         <div className="flex flex-col items-center">
@@ -20,7 +20,7 @@ export default function Projects() {
             <div key={project.title}
               className="w-full border border-zinc-800 rounded-xl p-3 bg-zinc-950"
             >
-              <div className="bg-zinc-900/90 border border-zinc-800 rounded-xl p-2 ">
+              <div className="bg-zinc-950/90 border border-zinc-800 rounded-xl p-2 ">
                 <div className="flex items-center gap-1 border-b border-zinc-500/50 pb-1.5">
                   <div className="bg-red-400 w-2 h-2 rounded-full" />
                   <div className="bg-orange-300 w-2 h-2 rounded-full" />

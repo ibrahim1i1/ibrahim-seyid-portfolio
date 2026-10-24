@@ -25,7 +25,7 @@ export default function About() {
 
     ]
     return (
-        <section id="about" className="min-h-screen max-w-7xl mx-auto">
+        <section id="about" className="min-h-screen flex items-center justify-center max-w-7xl mx-auto">
             <div className="w-full px-4 flex flex-col">
                 <div className="flex flex-col items-center gap-3 m-5">
                     <div className="bg-zinc-600/40 px-2 py-0.5 rounded-full border border-zinc-200/20 flex items-center justify-center space-x-1 w-fit">
