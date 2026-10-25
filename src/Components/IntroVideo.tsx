@@ -1,8 +1,9 @@
 import { useState } from "react";
-
+import { useLanguage } from "../context/LanguageContext";
 export default function IntroVideo () {
     const [showIntro, setShowIntro] = useState<boolean>(true);
     const [isFading, setIsFading] = useState<boolean>(false);
+    const { t } = useLanguage();
 
     const handleVideoEnd = () => {
         setIsFading(true);
@@ -31,7 +32,7 @@ export default function IntroVideo () {
                     onClick={handleVideoEnd}
                     className="absolute top-6 right-6 px-4 py-2 rounded-full border border-white/20 bg-black/40 text-sm backdrop-blur-md hover:bg-white/10 transition-colors"
                     >
-                        Skip Intro
+                        {t.intro.skip}
                     </button>
                 </div>
             )}

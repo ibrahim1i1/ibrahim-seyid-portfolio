@@ -1,20 +1,20 @@
-
+import { useLanguage } from "../context/LanguageContext";
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
+  const languages: ('EN' | 'TR')[] = ['EN', 'TR'];
+  const { language, setLanguage, t} = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [activeLink, setActiveLink] = useState<string>('#home');
-  const [activeLang, setActiveLang] = useState<string>('EN');
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Contact', href: '#contact' },
+    { name: t.nav.home, href: '#home' },
+    { name: t.nav.about, href: '#about' },
+    { name: t.nav.projects, href: '#projects' },
+    { name: t.nav.skills, href: '#skills' },
+    { name: t.nav.contact, href: '#contact' },
   ];
 
-  const languages = ['EN', 'TR'];
 
   useEffect(() => {
 
@@ -85,11 +85,11 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 p-1 text-xs">
               {languages.map((lang) => {
-                const isSelect = activeLang === lang;
+                const isSelect = language === lang;
                 return (
                   <button
                     key={lang}
-                    onClick={() => setActiveLang(lang)}
+                    onClick={() => setLanguage(lang)}
                     className={`rounded-full px-2.5 py-1 text-xs transition-all font-semibold ${isSelect
                       ? 'bg-white/20 text-white shadow-sm'
                       : 'text-zinc-400 hover:text-white'
