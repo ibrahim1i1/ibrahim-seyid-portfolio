@@ -13,7 +13,7 @@ export default function App() {
   return (
     <LanguageProvider>
       <div className="min-h-screen bg-black text-white">
-        <IntroVideo />
+
         <Navbar />
         <main>
           <Home />

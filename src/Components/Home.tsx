@@ -1,4 +1,7 @@
+import { useLanguage } from "../context/LanguageContext";
+
 export default function Home() {
+  const { t } = useLanguage();
   return (
     <section
       id="home"
@@ -28,19 +31,19 @@ export default function Home() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 " />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
               </span>
-              <span>Available for Junior Frontend Roles</span>
+              <span>{t.home.badge}</span>
             </div>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
-            Building modern & <br className="hidden sm:block" />
+            {t.home.title1}<br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">
-              Responsive web applications
+              {t.home.titleGradient}
             </span>
           </h1>
 
           <p className="max-w-xl text-base sm:text-lg text-zinc-400 leading-relaxed font-normal">
-            Hi, I'm <span className="text-white font-medium">İbrahim Seyid</span>. A Junior Frontend Developer passionate about creating clean, interactive, and responsive user interfaces using React , TypeScript, and Tailwind Css
+            {t.home.intro}<span className="text-white font-medium"> İbrahim Seyid</span>{t.home.description}
           </p>
 
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2 w-full sm:w-auto">
@@ -48,7 +51,7 @@ export default function Home() {
               href="#projects"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-white px-7 py-3 text-sm font-semibold text-black transition-all hover:bg-zinc-200 active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.15)]"
             >
-              <span>Explore Projects</span>
+              <span>{t.home.exploreBtn}</span>
               <span className="font-mono text-base">↓</span>
             </a>
 
@@ -56,13 +59,13 @@ export default function Home() {
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl border border-zinc-800 bg-zinc-900/60 px-7 py-3 text-sm font-medium text-zinc-300 hover:border-zinc-500 hover:bg-zinc-800/80 hover:text-white transition-all active:scale-95"
               href="#contact"
             >
-              <span>Contact Me</span>
+              <span>{t.home.contactBtn}</span>
               <span className="font-mono text-base">→</span>
             </a>
           </div>
 
           <div className="pt-6 border-t border-zinc-800/80 w-full flex flex-wrap items-center justify-center lg:justify-start gap-2.5 text-xs">
-            <span className="text-zinc-500 font-mono uppercase tracking-wider text-[11px] mr-1">TECH STACK:</span>
+            <span className="text-zinc-500 font-mono font-bold uppercase tracking-wider text-[11px] mr-1">{t.home.techStack}</span>
             {['React', 'TypeScript', 'Tailwind Css', 'Git & GitHub'].map((tech) => (
               <span
                 key={tech}
@@ -106,8 +109,8 @@ export default function Home() {
                 UI
               </div>
               <div className="text-left">
-                <p className="text-xs font-semibold text-white">Responsive Design</p>
-                <p className="text-[10px] text-zinc-500 font-mono">Mobile & Desktop</p>
+                <p className="text-xs font-semibold text-white">{t.home.responsiveTitle}</p>
+                <p className="text-[10px] text-zinc-500 font-mono">{t.home.responsiveSub}</p>
               </div>
             </div>
 
