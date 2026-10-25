@@ -168,7 +168,7 @@ export default function Contact() {
 
                         </form>
 
-                        <div className="mt-6 pt-6 border-t border-zinc-800/80 flex flex-wrap items-center justify-center gap-4 text-xs font-mono text-zinc-400">
+                        <div className="mt-6 pt-6 border-t border-zinc-800/80 flex items-center justify-center text-xs font-mono text-zinc-400">
                             <a href="mailto:barumalseyid77@gmail.com"
                                 target="_blank"
                                 rel="noreferrer"
@@ -176,24 +176,6 @@ export default function Contact() {
                             >
                                 <Mail className="w-4 h-4" />
                                 <span>barumalseyid77@gmail.com</span>
-                            </a>
-                            <span>•</span>
-                            <a href="https://github.com/ibrahim1i1"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="flex items-center gap-1.5 hover:text-white transition-colors cursor-pointer"
-                            >
-                                <LinkIcon className="w-4 h-4" />
-                                <span>GitHub</span>
-                            </a>
-                            <span>•</span>
-                            <a href="https://www.linkedin.com/in/ibrahim-seyid-2abb26407"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="flex items-center gap-1.5 hover:text-white text-sm transition-colors cursor-pointer"
-                            >
-                                <LinkIcon className="w-4 h-4" />
-                                <span>LinkedIn</span>
                             </a>
                         </div>
                     </div>
