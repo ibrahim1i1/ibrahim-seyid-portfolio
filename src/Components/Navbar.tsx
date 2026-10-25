@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -15,6 +15,34 @@ export default function Navbar() {
   ];
 
   const languages = ['EN', 'TR'];
+
+  useEffect(() => {
+
+    const handleScroll = () => {
+
+      const scrollPosition = window.scrollY + 150;
+
+      for (const link of navLinks) {
+        const sectionId = link.href.replace('#', '');
+        const section = document.getElementById(sectionId);
+
+        if (section) {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            setActiveLink(link.href);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll)
+
+  }, [])
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-black/80 px-4 py-2.5 sm:px-8 sm:py-3 backdrop-blur-md ">
@@ -106,7 +134,7 @@ export default function Navbar() {
                     className={`rounded-xl w-full block px-4 py-2.5  text-sm font-medium transition-all text-center ${isActive
                       ? 'bg-white/15 text-white font-semibold border border-white/20 shadow-sm'
                       : 'text-zinc-400 hover:bg-white/10 hover:text-white'
-                    }`}
+                      }`}
                   >
                     {link.name}
                   </a>
