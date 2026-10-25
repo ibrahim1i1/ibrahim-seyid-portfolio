@@ -1,4 +1,4 @@
-import { Send, LinkIcon, Mail, Phone, User, HelpCircle, MessageSquare, CheckCircle, Loader2 } from "lucide-react";
+import { Send, Mail, Phone, User, HelpCircle, MessageSquare, CheckCircle, Loader2 } from "lucide-react";
 import React, { useState } from "react";
 export default function Contact() {
     const [isSubmiting, setIsSubmiting] = useState<boolean>(false);
