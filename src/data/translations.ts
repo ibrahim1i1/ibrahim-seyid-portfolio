@@ -153,6 +153,40 @@ export const translations: PortfolioTranslations = {
                 },
             ],
         },
+        contact: {
+            badgeNumber: "04.",
+            badgeText: "Contact",
+            title: "Get In Touch",
+            description: "Have a project in mind, a job opportunity, or a general question? Fill out the form below.",
+            labels: {
+                name: "Your Name",
+                email: "Email Address",
+                phone: "Phone Number",
+                reason: "Reason / Purpose",
+                message: "Message",
+            },
+            placeholders: {
+                name: "Ibrahim Seyid",
+                email: "client@example.com",
+                phone: "+90 5xx xxx xx xx",
+                message: "Describe your project, timeline, or any questions...",
+            },
+            reasons: {
+                select: "Select reason...",
+                project: "New Project / Freelance",
+                job: "Job Opportunity / Role",
+                consultation: "General Consultation",
+                other: "Other",
+            },
+            status: {
+                success: "Thank You! your message has been sent successfully.",
+                error: "Something went wrong. Please try again or email directly.",
+            },
+            submitBtn: {
+                idle: "Send Message",
+                sending: "Sending...",
+            },
+        },
     },
     TR: {
         intro: {
@@ -261,51 +295,85 @@ export const translations: PortfolioTranslations = {
             ],
         },
         skills: {
-  badgeNumber: "03.",
-  badgeText: "Teknik Beceriler",
-  title: "Teknolojiler ve Araçlar",
-  description: "Ölçeklenebilir, yüksek performanslı web arayüzleri geliştirmek için kullandığım modern araçlar ve kütüphaneler.",
-  verifiedText: "Projelerde uygulandı",
-  activeStatus: "Aktif",
-  categories: [
-    {
-      id: "core",
-      title: "Temel Teknolojiler",
-      subtitle: "Modern JavaScript ve Frontend Temelleri",
-      skills: [
-        { name: "React", description: "SPA ve Hook Yapısı" },
-        { name: "TypeScript", description: "Tip Güvenliği" },
-        { name: "JavaScript", description: "ES6+ Mantığı" },
-        { name: "HTML5", description: "Semantik Arayüz" },
-        { name: "CSS3", description: "Modern Stil" },
-      ],
-    },
-    {
-      id: "ui",
-      title: "Arayüz ve Stil",
-      subtitle: "Duyarlı Sistemler ve Tasarım Mimarisi",
-      skills: [
-        { name: "Tailwind CSS", description: "Utility-First" },
-        { name: "Duyarlı Tasarımlar", description: "Mobil Öncelikli" },
-        { name: "Bileşen Arayüzü", description: "Tekrar Kullanılabilirlik" },
-        { name: "Durum Akışı", description: "Temiz Mantık" },
-        { name: "Tarayıcı Uyumluluğu", description: "Tutarlılık" },
-      ],
-    },
-    {
-      id: "tools",
-      title: "İş Akışı ve Araçlar",
-      subtitle: "Sürüm Kontrolü, API'ler ve Dağıtım",
-      skills: [
-        { name: "Git & GitHub", description: "Sürüm Kontrolü" },
-        { name: "REST API'ler", description: "Veri Entegrasyonu" },
-        { name: "Vite", description: "Hızlı Derleme" },
-        { name: "Vercel", description: "Canlıya Alma" },
-        { name: "VS Code", description: "Ana Kod Editörü" },
-      ],
-    },
-  ],
-},
+            badgeNumber: "03.",
+            badgeText: "Teknik Beceriler",
+            title: "Teknolojiler ve Araçlar",
+            description: "Ölçeklenebilir, yüksek performanslı web arayüzleri geliştirmek için kullandığım modern araçlar ve kütüphaneler.",
+            verifiedText: "Projelerde uygulandı",
+            activeStatus: "Aktif",
+            categories: [
+                {
+                    id: "core",
+                    title: "Temel Teknolojiler",
+                    subtitle: "Modern JavaScript ve Frontend Temelleri",
+                    skills: [
+                        { name: "React", description: "SPA ve Hook Yapısı" },
+                        { name: "TypeScript", description: "Tip Güvenliği" },
+                        { name: "JavaScript", description: "ES6+ Mantığı" },
+                        { name: "HTML5", description: "Semantik Arayüz" },
+                        { name: "CSS3", description: "Modern Stil" },
+                    ],
+                },
+                {
+                    id: "ui",
+                    title: "Arayüz ve Stil",
+                    subtitle: "Duyarlı Sistemler ve Tasarım Mimarisi",
+                    skills: [
+                        { name: "Tailwind CSS", description: "Utility-First" },
+                        { name: "Duyarlı Tasarımlar", description: "Mobil Öncelikli" },
+                        { name: "Bileşen Arayüzü", description: "Tekrar Kullanılabilirlik" },
+                        { name: "Durum Akışı", description: "Temiz Mantık" },
+                        { name: "Tarayıcı Uyumluluğu", description: "Tutarlılık" },
+                    ],
+                },
+                {
+                    id: "tools",
+                    title: "İş Akışı ve Araçlar",
+                    subtitle: "Sürüm Kontrolü, API'ler ve Dağıtım",
+                    skills: [
+                        { name: "Git & GitHub", description: "Sürüm Kontrolü" },
+                        { name: "REST API'ler", description: "Veri Entegrasyonu" },
+                        { name: "Vite", description: "Hızlı Derleme" },
+                        { name: "Vercel", description: "Canlıya Alma" },
+                        { name: "VS Code", description: "Ana Kod Editörü" },
+                    ],
+                },
+            ],
+        },
+        contact: {
+            badgeNumber: "04.",
+            badgeText: "İletişim",
+            title: "İletişime Geçin",
+            description: "Aklınızda bir proje mi var, bir iş teklifi veya genel bir soru mu? Aşağıdaki formu doldurun.",
+            labels: {
+                name: "Adınız Soyadınız",
+                email: "E-posta Adresi",
+                phone: "Telefon Numarası",
+                reason: "İletişim Nedeni",
+                message: "Mesajınız",
+            },
+            placeholders: {
+                name: "İbrahim Seyid",
+                email: "musteri@ornek.com",
+                phone: "+90 5xx xxx xx xx",
+                message: "Projenizi, teslim süresini veya sorularınızı belirtin...",
+            },
+            reasons: {
+                select: "Neden seçin...",
+                project: "Yeni Proje / Freelance",
+                job: "İş Teklifi / Pozisyon",
+                consultation: "Genel Danışmanlık",
+                other: "Diğer",
+            },
+            status: {
+                success: "Teşekkürler! Mesajınız başarıyla gönderildi.",
+                error: "Bir hata oluştu. Lütfen tekrar deneyin veya doğrudan e-posta gönderin.",
+            },
+            submitBtn: {
+                idle: "Mesaj Gönder",
+                sending: "Gönderiliyor...",
+            },
+        },
 
 
     }

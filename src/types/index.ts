@@ -109,7 +109,45 @@ export interface SkillsSection {
 }
 
 // ==========================================
-// 7.(Global Schema)
+// 7.(Contact)
+// ==========================================
+export interface ContactSection {
+  badgeNumber: string;
+  badgeText: string;
+  title: string;
+  description: string;
+  labels: {
+    name: string;
+    email: string;
+    phone: string;
+    reason: string;
+    message: string;
+  };
+  placeholders: {
+    name: string;
+    email: string;
+    phone: string;
+    message: string;
+  };
+  reasons: {
+    select: string;
+    project: string;
+    job: string;
+    consultation: string;
+    other: string;
+  };
+  status: {
+    success: string;
+    error: string;
+  };
+  submitBtn: {
+    idle: string;
+    sending: string;
+  };
+}
+
+// ==========================================
+// .(Global Schema)
 // ==========================================
 export type Language = 'EN' | 'TR';
 
@@ -120,6 +158,7 @@ export interface TranslationsSchema {
   about: AboutSection;
   projects: ProjectsSection;
   skills: SkillsSection;
+  contact: ContactSection;
 }
 
 export type PortfolioTranslations = Record<Language, TranslationsSchema>;
