@@ -187,6 +187,12 @@ export const translations: PortfolioTranslations = {
                 sending: "Sending...",
             },
         },
+        footer: {
+            role: "Frontend Developer",
+            rights: "© 2026 Ibrahim Seyid. All rights reserved.",
+            crafted: "Crafted with React & Tailwind CSS",
+            backToTop: "Back to top",
+        },
     },
     TR: {
         intro: {
@@ -374,7 +380,11 @@ export const translations: PortfolioTranslations = {
                 sending: "Gönderiliyor...",
             },
         },
-
-
+        footer: {
+            role: "Frontend Geliştirici",
+            rights: "© 2026 İbrahim Seyid. Tüm hakları saklıdır.",
+            crafted: "React ve Tailwind CSS ile geliştirildi",
+            backToTop: "Yukarı çık",
+        },
     }
 };

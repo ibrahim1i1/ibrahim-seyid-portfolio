@@ -1,6 +1,8 @@
 import { ArrowUp, Sparkles } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Footer() {
+    const {t} = useLanguage();
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
@@ -26,14 +28,14 @@ export default function Footer() {
                             IBRAHIM SEYİD
                         </span>
                         <span className="block text-[11px] font-mono text-zinc-500 font-semibold">
-                            Frontend Developer
+                            {t.footer.role}
                         </span>
                     </div>
                 </div>
                 <div className="text-center sm:text-right text-xs font-mono font-semibold text-zinc-500 space-y-1">
-                    <p>© 2026 Ibrahim Said. All rights reserved.</p>
+                    <p>{t.footer.rights}</p>
                     <p className="flex items-center justify-center sm:justify-end gap-1.5 text-zinc-400">
-                        <span>Crafted with React & Tailwind CSS</span>
+                        <span>{t.footer.crafted}</span>
                         <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
                     </p>
                 </div>
@@ -67,7 +69,7 @@ export default function Footer() {
                         type="button"
                         onClick={scrollToTop}
                         className="p-2.5 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-cyan-400 hover:border-cyan-500/40 transition-all group cursor-pointer"
-                        title="Scroll to top"
+                        title={t.footer.backToTop}
                     >
                         <ArrowUp className="w-4 h-4 transition-transform duration-300 group-hover:-translate-y-0.5" />
                     </button>

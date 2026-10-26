@@ -147,6 +147,16 @@ export interface ContactSection {
 }
 
 // ==========================================
+// 7.(Contact)
+// ==========================================
+export interface FooterSection {
+  role: string;
+  rights: string;
+  crafted: string;
+  backToTop: string;
+}
+
+// ==========================================
 // .(Global Schema)
 // ==========================================
 export type Language = 'EN' | 'TR';
@@ -159,6 +169,7 @@ export interface TranslationsSchema {
   projects: ProjectsSection;
   skills: SkillsSection;
   contact: ContactSection;
+  footer: FooterSection;
 }
 
 export type PortfolioTranslations = Record<Language, TranslationsSchema>;
