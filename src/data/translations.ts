@@ -1,6 +1,6 @@
-export type Language = 'EN' | 'TR';
+import type { PortfolioTranslations } from "../types";
 
-export const translations = {
+export const translations: PortfolioTranslations = {
     EN: {
         intro: {
             skip: "Skip Intro",
@@ -106,7 +106,53 @@ export const translations = {
                     isComingSoon: true,
                 },
             ],
-        }
+        },
+        skills: {
+            badgeNumber: "03.",
+            badgeText: "Technical Skills",
+            title: "Technologies & Toolkit",
+            description: "A focused stack of modern tools and libraries I leverage to build scalable, high-performance web interfaces.",
+            verifiedText: "Verified in projects",
+            activeStatus: "Active",
+            categories: [
+                {
+                    id: "core",
+                    title: "Core Technologies",
+                    subtitle: "Modern JavaScript & Frontend Fundamentals",
+                    skills: [
+                        { name: "React", description: "SPA & Hooks" },
+                        { name: "TypeScript", description: "Type Safety" },
+                        { name: "JavaScript", description: "ES6+ Logic" },
+                        { name: "HTML5", description: "Semantic UI" },
+                        { name: "CSS3", description: "Modern Styling" },
+                    ],
+                },
+                {
+                    id: "ui",
+                    title: "UI & Styling",
+                    subtitle: "Responsive Systems & Design Architecture",
+                    skills: [
+                        { name: "Tailwind CSS", description: "Utility-first" },
+                        { name: "Responsive Layouts", description: "Mobile-First" },
+                        { name: "Component UI", description: "Reusability" },
+                        { name: "State Flow", description: "Clean Logic" },
+                        { name: "Cross-Browser", description: "Consistency" },
+                    ],
+                },
+                {
+                    id: "tools",
+                    title: "Workflow & Tools",
+                    subtitle: "Version Controls, APIs & Deployments",
+                    skills: [
+                        { name: "Git & GitHub", description: "Version control" },
+                        { name: "REST APIs", description: "Data Fetching" },
+                        { name: "Vite", description: "Fast Building" },
+                        { name: "Vercel", description: "Deployment" },
+                        { name: "VS Code", description: "Primary Editor" },
+                    ],
+                },
+            ],
+        },
     },
     TR: {
         intro: {
@@ -120,12 +166,12 @@ export const translations = {
             contact: "İletişim",
         },
         home: {
-            badge: "Junior Frontend Pozisyonlarına Açık", // أدق تعبير مستخدم في سوق العمل التركي
+            badge: "Junior Frontend Pozisyonlarına Açık",
             title1: "Modern & responsive",
-            titleGradient: "web uygulamaları geliştiriyorum", // يعطي معنى "أقوم ببناء وتطوير تطبيقات ويب حديثة ومتجاوبة"
+            titleGradient: "web uygulamaları geliştiriyorum",
             intro: "Merhaba, ben",
             description: "React, TypeScript ve Tailwind CSS ile temiz, modern ve responsive kullanıcı arayüzleri geliştiren Junior Frontend Geliştirici.",
-            exploreBtn: "Projelerimi İncele", // أو "Projeleri Keşfet" كلاهما ممتاز
+            exploreBtn: "Projelerimi İncele",
             contactBtn: "İletişime Geç",
             techStack: "TEKNOLOJİLER:",
             responsiveTitle: "Responsive Tasarım",
@@ -213,7 +259,53 @@ export const translations = {
                     isComingSoon: true,
                 },
             ],
-        }
+        },
+        skills: {
+  badgeNumber: "03.",
+  badgeText: "Teknik Beceriler",
+  title: "Teknolojiler ve Araçlar",
+  description: "Ölçeklenebilir, yüksek performanslı web arayüzleri geliştirmek için kullandığım modern araçlar ve kütüphaneler.",
+  verifiedText: "Projelerde uygulandı",
+  activeStatus: "Aktif",
+  categories: [
+    {
+      id: "core",
+      title: "Temel Teknolojiler",
+      subtitle: "Modern JavaScript ve Frontend Temelleri",
+      skills: [
+        { name: "React", description: "SPA ve Hook Yapısı" },
+        { name: "TypeScript", description: "Tip Güvenliği" },
+        { name: "JavaScript", description: "ES6+ Mantığı" },
+        { name: "HTML5", description: "Semantik Arayüz" },
+        { name: "CSS3", description: "Modern Stil" },
+      ],
+    },
+    {
+      id: "ui",
+      title: "Arayüz ve Stil",
+      subtitle: "Duyarlı Sistemler ve Tasarım Mimarisi",
+      skills: [
+        { name: "Tailwind CSS", description: "Utility-First" },
+        { name: "Duyarlı Tasarımlar", description: "Mobil Öncelikli" },
+        { name: "Bileşen Arayüzü", description: "Tekrar Kullanılabilirlik" },
+        { name: "Durum Akışı", description: "Temiz Mantık" },
+        { name: "Tarayıcı Uyumluluğu", description: "Tutarlılık" },
+      ],
+    },
+    {
+      id: "tools",
+      title: "İş Akışı ve Araçlar",
+      subtitle: "Sürüm Kontrolü, API'ler ve Dağıtım",
+      skills: [
+        { name: "Git & GitHub", description: "Sürüm Kontrolü" },
+        { name: "REST API'ler", description: "Veri Entegrasyonu" },
+        { name: "Vite", description: "Hızlı Derleme" },
+        { name: "Vercel", description: "Canlıya Alma" },
+        { name: "VS Code", description: "Ana Kod Editörü" },
+      ],
+    },
+  ],
+},
 
 
     }
