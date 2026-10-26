@@ -55,6 +55,58 @@ export const translations = {
                 }
             ]
         },
+        projects: {
+            badgeNumber: "02.",
+            badgeText: "Featured Projects",
+            title: "Selected Works & Applications",
+            description: "Real-world web projects focusing on performance, responsive design, and clean architecture.",
+            previewText: "preview.app",
+            liveDemoText: "Live Demo",
+            comingSoonText: "Coming Soon",
+            sourceCodeText: "Source",
+            items: [
+                {
+                    id: "weather-app",
+                    title: "Live Weather Card",
+                    description: "Responsive weather widget fetching live atmospheric data from Open-Meteo API with dark/light mode persistence.",
+                    skills: ["React", "TypeScript", "Tailwind CSS", "REST API"],
+                    image: "/images/weather-app.png", // ضع مسار صورتك هنا
+                    projectURL: "https://your-weather-app.vercel.app",
+                    githubURL: "https://github.com/your-username/weather-app",
+                    isComingSoon: false,
+                },
+                {
+                    id: "mini-dashboard",
+                    title: "Mini Dashboard",
+                    description: "Modern analytics and product management dashboard featuring category filtering, state management, and SPA routing.",
+                    skills: ["React", "TypeScript", "Tailwind CSS", "React Router"],
+                    image: "/images/mini-dashboard.png",
+                    projectURL: "https://mini-dashboard-3pp1.vercel.app",
+                    githubURL: "https://github.com/your-username/Mini-Dashboard",
+                    isComingSoon: false,
+                },
+                {
+                    id: "polypack",
+                    title: "PolyPack - FIBC Industrial Catalog",
+                    description: "A commercial product catalog for industrial Big Bags (FIBC) featuring responsive layout, multi-language support, and direct contact integration.",
+                    skills: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
+                    image: "/images/polypack-image.png", // مسار صورة المشروع
+                    projectURL: "https://polypack-big-bag.vercel.app", // أو الرابط المنشور لديك
+                    githubURL: "https://github.com/ibrahim1il1/PolyPack-Big-Bag",
+                    isComingSoon: false,
+                },
+                {
+                    id: "ecommerce",
+                    title: "E-Commerce Platform",
+                    description: "Full-featured online store with cart flow, product catalog, and responsive checkout interface.",
+                    skills: ["React", "TypeScript", "Tailwind CSS", "Zustand"],
+                    image: "https://avatars.mds.yandex.net/i?id=16a6cd569f2c4f0d0639f15abdbe8d95f2b71547-5220476-images-thumbs&n=13",
+                    projectURL: "",
+                    githubURL: "",
+                    isComingSoon: true,
+                },
+            ],
+        }
     },
     TR: {
         intro: {
@@ -109,6 +161,58 @@ export const translations = {
                     description: "Sürekli öğrenme, problem çözme becerilerini geliştirme ve geliştirici ekipleriyle iş birliğine hazır olma."
                 }
             ]
+        },
+        projects: {
+            badgeNumber: "02.",
+            badgeText: "Öne Çıkan Projeler",
+            title: "Seçilmiş Çalışmalar ve Uygulamalar",
+            description: "Performans, duyarlı tasarım ve temiz mimariye odaklanan gerçek dünya web projeleri.",
+            previewText: "preview.app",
+            liveDemoText: "Canlı Demo",
+            comingSoonText: "Yakında",
+            sourceCodeText: "Kaynak Kod",
+            items: [
+                {
+                    id: "weather-app",
+                    title: "Canlı Hava Durumu Kartı",
+                    description: "Open-Meteo API ile anlık hava verilerini getiren, koyu/açık tema kayıt desteğine sahip duyarlı hava durumu arayüzü.",
+                    skills: ["React", "TypeScript", "Tailwind CSS", "REST API"],
+                    image: "/images/weather-app.png",
+                    projectURL: "https://your-weather-app.vercel.app",
+                    githubURL: "https://github.com/your-username/weather-app",
+                    isComingSoon: false,
+                },
+                {
+                    id: "mini-dashboard",
+                    title: "Mini Yönetim Paneli",
+                    description: "Kategori filtreleme, durum yönetimi ve SPA yönlendirmesi içeren modern ürün ve analiz paneli.",
+                    skills: ["React", "TypeScript", "Tailwind CSS", "React Router"],
+                    image: "/images/mini-dashboard.png",
+                    projectURL: "https://mini-dashboard-3pp1.vercel.app",
+                    githubURL: "https://github.com/your-username/Mini-Dashboard",
+                    isComingSoon: false,
+                },
+                {
+                    id: "polypack",
+                    title: "PolyPack - Endüstriyel Big Bag Kataloğu",
+                    description: "Endüstriyel FIBC Big Bag ambalajları için geliştirilmiş, çok dilli destek ve doğrudan iletişim entegrasyonu sunan ticari ürün kataloğu.",
+                    skills: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
+                    image: "/images/polypack-image.png",
+                    projectURL: "https://polypack-big-bag.vercel.app",
+                    githubURL: "https://github.com/ibrahim1il1/PolyPack-Big-Bag",
+                    isComingSoon: false,
+                },
+                {
+                    id: "ecommerce",
+                    title: "E-Ticaret Platformu",
+                    description: "Sepet akışı, ürün kataloğu ve duyarlı ödeme arayüzüne sahip kapsamlı online alışveriş platformu.",
+                    skills: ["React", "TypeScript", "Tailwind CSS", "Zustand"],
+                    image: "https://avatars.mds.yandex.net/i?id=16a6cd569f2c4f0d0639f15abdbe8d95f2b71547-5220476-images-thumbs&n=13",
+                    projectURL: "",
+                    githubURL: "",
+                    isComingSoon: true,
+                },
+            ],
         }
 
 
