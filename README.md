@@ -1,75 +1,69 @@
-# React + TypeScript + Vite
+İbrahim Seyid - Modern Frontend Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, fully responsive personal portfolio designed to showcase modern frontend engineering skills, interactive UI components, and real-world projects. Built with React, TypeScript, and Tailwind CSS, featuring custom bilingual localization (i18n), strict type safety, and tailored SEO metadata.
 
-Currently, two official plugins are available:
+🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Live URL: https://ibrahim-seyid-portfolio.vercel.app/
+✨ Features
 
-## React Compiler
+Bilingual Architecture (i18n): Seamless, stateful language switching between English and Turkish utilizing a lightweight React Context implementation without external heavy libraries.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Responsive & Mobile-First: Precision-crafted layout optimized across mobile devices, tablets, and widescreen displays, complete with accessible navigation and smooth scrolling.
 
-## Expanding the ESLint configuration
+Type Safety & Maintainability: 100% written in TypeScript with rigorous type definitions for translation dictionaries, UI components, and project datasets.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Modern Dark UI/UX: Polished dark-mode aesthetics with subtle border accents, glowing highlights, and balanced contrast designed via Tailwind CSS.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Interactive Showcase: Dynamic project gallery featuring live demonstration links, GitHub repository tags, and technology badges.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Contact Integration: Functional contact form architecture with real-time status handling (success, error, submitting) and direct email outreach.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Social Previews & SEO: Configured Open Graph and Twitter Card tags providing custom visual cards across platforms (LinkedIn, X, WhatsApp).
 
-```
+🛠 Tech Stack
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Framework: React + Vite
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Language: TypeScript
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Styling: Tailwind CSS
 
-```
+State Management: React Context API (LanguageContext)
+
+Icons: Lucide React
+
+Deployment: Vercel
+
+📦 Getting Started
+
+To run this project locally on your machine:
+
+Clone the repository:
+
+git clone https://github.com/ibrahim1i1/ibrahim-seyid-portfolio.git
+
+
+Navigate into the project directory:
+
+cd ibrahim-seyid-portfolio
+
+
+Install dependencies:
+
+npm install
+
+
+Start the local development server:
+
+npm run dev
+
+
+Build for production:
+
+npm run build
+
+
+📄 License
+
+This project is open-source and available under the MIT License.
