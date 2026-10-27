@@ -71,8 +71,8 @@ export const translations: PortfolioTranslations = {
                     description: "Responsive weather widget fetching live atmospheric data from Open-Meteo API with dark/light mode persistence.",
                     skills: ["React", "TypeScript", "Tailwind CSS", "REST API"],
                     image: "/images/weather-app.png", // ضع مسار صورتك هنا
-                    projectURL: "https://your-weather-app.vercel.app",
-                    githubURL: "https://github.com/your-username/weather-app",
+                    projectURL: "https://weather-app-tau-dusky-27.vercel.app/",
+                    githubURL: "https://github.com/ibrahim1i1/Weather-App",
                     isComingSoon: false,
                 },
                 {
@@ -82,7 +82,7 @@ export const translations: PortfolioTranslations = {
                     skills: ["React", "TypeScript", "Tailwind CSS", "React Router"],
                     image: "/images/mini-dashboard.png",
                     projectURL: "https://mini-dashboard-3pp1.vercel.app",
-                    githubURL: "https://github.com/your-username/Mini-Dashboard",
+                    githubURL: "https://github.com/ibrahim1i1/Mini-Dashboard",
                     isComingSoon: false,
                 },
                 {
@@ -91,8 +91,8 @@ export const translations: PortfolioTranslations = {
                     description: "A commercial product catalog for industrial Big Bags (FIBC) featuring responsive layout, multi-language support, and direct contact integration.",
                     skills: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
                     image: "/images/polypack-image.png", // مسار صورة المشروع
-                    projectURL: "https://polypack-big-bag.vercel.app", // أو الرابط المنشور لديك
-                    githubURL: "https://github.com/ibrahim1il1/PolyPack-Big-Bag",
+                    projectURL: "https://poly-pack-big-bag.vercel.app/", // أو الرابط المنشور لديك
+                    githubURL: "https://github.com/ibrahim1i1/PolyPack-Big-Bag",
                     isComingSoon: false,
                 },
                 {
@@ -264,8 +264,8 @@ export const translations: PortfolioTranslations = {
                     description: "Open-Meteo API ile anlık hava verilerini getiren, koyu/açık tema kayıt desteğine sahip duyarlı hava durumu arayüzü.",
                     skills: ["React", "TypeScript", "Tailwind CSS", "REST API"],
                     image: "/images/weather-app.png",
-                    projectURL: "https://your-weather-app.vercel.app",
-                    githubURL: "https://github.com/your-username/weather-app",
+                    projectURL: "https://weather-app-tau-dusky-27.vercel.app/",
+                    githubURL: "https://github.com/ibrahim1i1/Weather-App",
                     isComingSoon: false,
                 },
                 {
@@ -275,7 +275,7 @@ export const translations: PortfolioTranslations = {
                     skills: ["React", "TypeScript", "Tailwind CSS", "React Router"],
                     image: "/images/mini-dashboard.png",
                     projectURL: "https://mini-dashboard-3pp1.vercel.app",
-                    githubURL: "https://github.com/your-username/Mini-Dashboard",
+                    githubURL: "https://github.com/ibrahim1i1/Mini-Dashboard",
                     isComingSoon: false,
                 },
                 {
@@ -284,8 +284,8 @@ export const translations: PortfolioTranslations = {
                     description: "Endüstriyel FIBC Big Bag ambalajları için geliştirilmiş, çok dilli destek ve doğrudan iletişim entegrasyonu sunan ticari ürün kataloğu.",
                     skills: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
                     image: "/images/polypack-image.png",
-                    projectURL: "https://polypack-big-bag.vercel.app",
-                    githubURL: "https://github.com/ibrahim1il1/PolyPack-Big-Bag",
+                    projectURL: "https://poly-pack-big-bag.vercel.app/",
+                    githubURL: "https://github.com/ibrahim1i1/PolyPack-Big-Bag",
                     isComingSoon: false,
                 },
                 {
