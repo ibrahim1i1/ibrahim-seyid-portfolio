@@ -43,7 +43,7 @@ export default function Home() {
           </h1>
 
           <p className="max-w-xl text-base sm:text-lg text-zinc-400 leading-relaxed font-normal">
-            {t.home.intro}<span className="text-white font-medium"> İbrahim Seyid</span>{t.home.description}
+            {t.home.intro}<span className="text-white font-medium"> İbrahim Seyid </span>{t.home.description}
           </p>
 
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2 w-full sm:w-auto">
