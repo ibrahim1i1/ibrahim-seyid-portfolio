@@ -57,7 +57,7 @@ export default function Projects() {
                   target="_blank"
                   rel="noreferrer"
                   className={`flex items-center justify-center gap-2 text-sm bg-white/95 text-black font-semibold px-2.5
-                   py-2.5 rounded-lg hover:bg-white/75 active:scale-95 transition-all ${project.title === 'E-Commerce Platform'
+                   py-2.5 rounded-lg hover:bg-white/75 active:scale-95 transition-all ${project.isComingSoon
                       ? 'opacity-40 pointer-events-none cursor-not-allowed '
                       : ''
                     }`}
@@ -74,7 +74,7 @@ export default function Projects() {
                 <a href={project.githubURL}
                   target="_blank"
                   rel="noreferrer"
-                  className={`flex items-center justify-center gap-2 text-sm bg-black text-zinc-200 border border-zinc-700/60 px-2.5 py-2.5 rounded-lg hover:bg-zinc-800 active:scale-95 transition-all ${project.title === 'E-Commerce Platform'
+                  className={`flex items-center justify-center gap-2 text-sm bg-black text-zinc-200 border border-zinc-700/60 px-2.5 py-2.5 rounded-lg hover:bg-zinc-800 active:scale-95 transition-all ${project.isComingSoon
                     ? 'opacity-40 cursor-not-allowed pointer-events-none'
                     : ''
                   }`}
