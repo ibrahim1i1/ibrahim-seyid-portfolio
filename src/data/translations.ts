@@ -70,7 +70,7 @@ export const translations: PortfolioTranslations = {
                     title: "Live Weather Card",
                     description: "Responsive weather widget fetching live atmospheric data from Open-Meteo API with dark/light mode persistence.",
                     skills: ["React", "TypeScript", "Tailwind CSS", "REST API"],
-                    image: "/images/weather-app.png", // ضع مسار صورتك هنا
+                    image: "/images/weather-app.png",
                     projectURL: "https://weather-app-tau-dusky-27.vercel.app/",
                     githubURL: "https://github.com/ibrahim1i1/Weather-App",
                     isComingSoon: false,
@@ -90,8 +90,8 @@ export const translations: PortfolioTranslations = {
                     title: "PolyPack - FIBC Industrial Catalog",
                     description: "A commercial product catalog for industrial Big Bags (FIBC) featuring responsive layout, multi-language support, and direct contact integration.",
                     skills: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
-                    image: "/images/polypack-image.png", // مسار صورة المشروع
-                    projectURL: "https://poly-pack-big-bag.vercel.app/", // أو الرابط المنشور لديك
+                    image: "/images/polypack-image.png",
+                    projectURL: "https://poly-pack-big-bag.vercel.app/",
                     githubURL: "https://github.com/ibrahim1i1/PolyPack-Big-Bag",
                     isComingSoon: false,
                 },
